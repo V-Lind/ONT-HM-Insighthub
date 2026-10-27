@@ -1,0 +1,198 @@
+.sensorlist-sensor-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.sensor-container {
+    background: linear-gradient(
+        to bottom right,
+        rgba(192, 149, 149, 0.8) 0%,
+        rgba(29, 26, 26, 0.6) 50%,
+        rgba(235, 105, 105, 0.8) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition effect on box-shadow */
+    width: 95%;
+}
+
+.sensor-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover for emphasis */
+}
+
+.sensor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+}
+
+.red-button {
+    flex-grow: 1;
+    height: 35px;
+    padding-top: 4px;
+    border-radius: 4px;
+    margin: 0.2rem; /* Add margin between buttons */
+    max-width: calc(47%); /* Ensure equal width for buttons with margin */
+    overflow: hidden; /* Prevent text overflow */
+    white-space: nowrap;
+    border: 2px solid #979797;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    transition: transform 0.1s ease-in-out; /* Add a smooth transition effect */
+}
+
+.red-button:active {
+    transform: translateY(
+        2px
+    ); /* Shift the button downward by 2 pixels when pressed */
+}
+
+.green-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 35px;
+    border-radius: 4px;
+    margin: 0.2rem; /* Add margin between buttons */
+    max-width: calc(47%); /* Ensure equal width for buttons with margin */
+    overflow: hidden; /* Prevent text overflow fff*/
+    white-space: nowrap;
+    border: 2px solid #979797;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    transition: transform 0.1s ease-in-out; /* Add a smooth transition effect */
+}
+
+.green-button:active {
+    transform: translateY(
+        2px
+    ); /* Shift the button downward by 2 pixels when pressed */
+}
+
+.red-button {
+    background-color: rgb(231, 55, 55);
+}
+
+.green-button {
+    background-color: rgba(29, 201, 29, 0.774);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 0.5rem;
+    border: 2px solid #cfc9c9;
+    border-radius: 10px;
+}
+
+.input-container-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0);
+    justify-content: center;
+    height: 45px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.input-container-green-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 2px solid #979797;
+    border-radius: 10px;
+    width: 50%;
+    height: 45px;
+    background-color: rgb(66, 139, 66);
+}
+
+.input-container-red-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1%;
+    margin-left: 2%;
+    padding: 0.5rem;
+    border: 2px solid #979797;
+    border-radius: 10px;
+    width: 30%;
+    height: 32px;
+    background-color: rgb(226, 35, 35);
+}
+
+.dropdown-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.sensors-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #cfc9c9;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 3%;
+}
