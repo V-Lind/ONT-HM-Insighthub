@@ -5,20 +5,19 @@ Welcome to Hm Sensors InsightHub, a powerful web application designed for sensor
 ## Key Features
 
 1. **Sensor Explorer:**
-   - *Fetch, Explore, and Search:* Quickly fetch, explore, and search for a diverse range of sensors available on FROST servers and easily navigate through the sensor data to find the information you need.
+   - _Fetch, Explore, and Search:_ Quickly fetch, explore, and search for a diverse range of sensors available on FROST servers and easily navigate through the sensor data to find the information you need.
 
 2. **Graph Comparison:**
-   - *Visualize Data Trends:* Utilize the graph comparison feature to compare observations from different sensors. Gain insights into data trends, variations, and correlations through graph visualization.
+   - _Visualize Data Trends:_ Utilize the graph comparison feature to compare observations from different sensors. Gain insights into data trends, variations, and correlations through graph visualization.
 
 3. **Precise Filtering and Download:**
-   - *Fine-tuned Data Selection:* Precise filtering options for dataset selection, ensuring you only work with the data that you specifically want. Download your filtered datasets for further analysis or documentation.
+   - _Fine-tuned Data Selection:_ Precise filtering options for dataset selection, ensuring you only work with the data that you specifically want. Download your filtered datasets for further analysis or documentation.
 
 4. **Battery Status List:**
-   - *Monitor Sensor Health:* Stay informed about the health of currently searched sensors with the Battery Status List. Understand battery levels and check for any potential issues to ensure continuous and reliable data collection.
+   - _Monitor Sensor Health:_ Stay informed about the health of currently searched sensors with the Battery Status List. Understand battery levels and check for any potential issues to ensure continuous and reliable data collection.
 
 5. **Mobile View with QR Code:**
-   - *On-the-Go Access:* Experience the convenience of accessing sensor data on mobile devices with a dedicated mobile view. Simply scan the QR code associated with a specific sensor to view real-time information seamlessly.
-
+   - _On-the-Go Access:_ Experience the convenience of accessing sensor data on mobile devices with a dedicated mobile view. Simply scan the QR code associated with a specific sensor to view real-time information seamlessly.
 
 ## Screenshots
 
@@ -48,36 +47,21 @@ Welcome to Hm Sensors InsightHub, a powerful web application designed for sensor
 
 ### System Requirements
 
-Ensure the following dependencies are installed on your machine before proceeding:
+Ensure Docker is installed on your machine:
 
 - [Docker](https://www.docker.com/get-started)
-- [Node.js](https://nodejs.org/en/download/)
-- Access to the GitLab repository: [Project Repo](https://gitlab.lrz.de/studi_projects/2023WS24_D3I/pc5_sensors_hm-sense/scrum-management)
 
-### Install and Start the System
+### Launch the System
 
 ```bash
-# Clone the App Repository
-git clone https://gitlab.lrz.de/studi_projects/2023WS24_D3I/pc5_sensors_hm-sense/scrum-management.git
-
-# Navigate to the Project Directory
-cd scrum-management
-
-# Build Docker Image
 docker build -t hm_insighthub .
-
-# Run the Docker Container
 docker run -p 3000:80 -d hm_insighthub
-
-# Check Container Status
 docker ps
-
-Access the application by opening your web browser and navigating to http://localhost:3000.
 ```
 
 ## Usage
 
-- Start the system and explore the available sensors.
+- Start the system and search for the available sensors.
 - Utilize the "Sensor Explorer" to fetch and search for sensors from FROST servers.
 - Compare observations from different sensors using the "Graph Comparison" feature.
 - Employ precise filtering to narrow down datasets, and download the selected data for analysis.
@@ -104,8 +88,3 @@ Follow these steps to make the most of the system:
 
 5. **Mobile View with QR Code:**
    - Access a dedicated mobile view for a specific sensor by scanning its QR code.
-
-## Conclusion
-
-Thank you for exploring Hm Sensors InsightHub! We hope this tool proves valuable for your sensor data exploration and analysis needs.
-
